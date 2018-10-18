@@ -77,5 +77,7 @@
         }
 	}
 	echo str_pad("-", 38, "-") . "\n" . str_pad("Total time:", 25) . " : " . $total ." sec.</pre>";
+		$secondsWait = 1;
+header("Refresh:$secondsWait");
 	
 ?>
