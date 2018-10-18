@@ -1,5 +1,5 @@
 FROM debian:stretch
-MAINTAINER Francois Billant <fbillant@gmail.com>
+MAINTAINER Florian Fröhlich
 
 EXPOSE 80
 
