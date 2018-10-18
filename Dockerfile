@@ -21,4 +21,6 @@ RUN rm -f /var/www/html/index.html
 
 ADD index.php /var/www/html/index.php
 
+USER 1001
+
 CMD [ "/usr/sbin/apache2", "-D", "FOREGROUND" ]
