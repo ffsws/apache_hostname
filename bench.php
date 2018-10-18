@@ -69,7 +69,7 @@
 	$functions = get_defined_functions();
         $hostname = gethostname();
 	$line = str_pad("-",38,"-");
-	echo "<pre>$line\n|".str_pad("PHP BENCHMARK SCRIPT",36," ",STR_PAD_BOTH)."|\n$line\nStart : ".date("Y-m-d H:i:s")."\nServer : {$_SERVER['SERVER_NAME']}@{$_SERVER['SERVER_ADDR']}\nPHP version : ".PHP_VERSION."\nPlatform : ".PHP_OS. "\nHost: {$hostname}\n$line\n";
+	echo "<pre>$line\n|".str_pad("PHP BENCHMARK SCRIPT",36," ",STR_PAD_BOTH)."|\n$line\nStart : ".date("Y-m-d H:i:s")."\nServer : {$_SERVER['SERVER_NAME']}@{$_SERVER['SERVER_ADDR']}\nPHP version : ".PHP_VERSION."\nPlatform : ".PHP_OS. "\nHost : {$hostname}\n$line\n";
 	foreach ($functions['user'] as $user) {
 		if (preg_match('/^test_/', $user)) {
 			$total += $result = $user();
