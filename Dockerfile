@@ -21,6 +21,8 @@ RUN rm -f /var/www/html/index.html
 
 ADD index.php /var/www/html/index.php
 
+RUN rm -rf /run/httpd && mkdir /run/httpd && chmod -R a+rwx /run/httpd && chmod -R a+rwx /var/log/apache2
+
 USER 1001
 
 CMD [ "/usr/sbin/apache2", "-D", "FOREGROUND" ]
