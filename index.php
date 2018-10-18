@@ -1,9 +1,9 @@
 <html>
 	<body>
-                This page is displayed on the container: <b>
+                Diese Seite läuft auf POD: <b>
 <?php
 $hostname = gethostname();
-print POD: $hostname;
+print $hostname;
 ?>
 </b>
 	</body>
