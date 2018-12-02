@@ -4,7 +4,7 @@
 <?php
 $hostname = gethostname();
 print $hostname;
-		$secondsWait = 1;
+		$secondsWait = 0.1;
 header("Refresh:$secondsWait");
 ?>
 </b>
