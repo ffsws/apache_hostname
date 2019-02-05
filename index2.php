@@ -12,7 +12,7 @@ header("Refresh:$secondsWait");
 <?php
 
 foreach (getallheaders() as $name => $value) {
-    echo "$name: $value\n""\n";
+    echo "$name: $value \n";
 }
 
 ?>
