@@ -8,14 +8,6 @@ print $hostname;
 header("Refresh:$secondsWait");
 		
 ?>
-		
-<?php
-
-foreach (getallheaders() as $name => $value) {
-    echo "$name: $value\n";
-}
-
-?>
 </b>
 	</body>
 </html>
