@@ -4,7 +4,7 @@
 <?php
 $hostname = gethostname();
 print $hostname;
-		$secondsWait = 0.1;
+		$secondsWait = 5.0;
 header("Refresh:$secondsWait");
 		
 ?>
@@ -12,7 +12,7 @@ header("Refresh:$secondsWait");
 <?php
 
 foreach (getallheaders() as $name => $value) {
-    echo "$name: $value\n";
+    echo "$name: $value\n""\n";
 }
 
 ?>
