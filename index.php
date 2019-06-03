@@ -10,11 +10,11 @@ header("Refresh:$secondsWait");
 		
 
 if (strpos($hostname, 'blue') !== false) {
-echo "<body style='background-color:blue';'font-size:28pt';'color:white'>";
+echo "<body style='background-color:blue';'font-size:30pt';'color:white'>";
 };
 		
 if (strpos($hostname, 'green') !== false) {
-echo "<body style='background-color:green';'font-size:28pt';'color:white'>";
+echo "<body style='background-color:green';'font-size:30pt';'color:white'>";
 };
 		
 ?>
