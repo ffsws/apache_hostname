@@ -6,8 +6,7 @@ $hostname = gethostname();
 print $hostname;
 		$secondsWait = 0.1;
 header("Refresh:$secondsWait");
-		
-echo "<body font size="24" face='Arial'>";
+
 		
 
 if (strpos($hostname, 'blue') !== false) {
